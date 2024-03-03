@@ -1,0 +1,28 @@
+body {
+	color: var(--mg-color-secondary);
+	font-family: Roboto,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size: 1.2em;
+	font-weight: 300;
+	letter-spacing: .01em;
+	line-height: 1.6;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+}
+
+
+#particles-js {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+}
