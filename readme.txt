@@ -31,7 +31,7 @@ For example:
 
 (function () {
 
-    // Load particals.js using the configuration file from step 2
+    // Load particles.js using the configuration file from step 2
     particlesJS.load('particles-js', '../particles.json');
 
 
