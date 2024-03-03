@@ -3,6 +3,7 @@ Using particles.js as an interactive background.
 Visit https://majenka.com to see it in action or download this demo and try it out for yourself.
 
 Instructions for using particles.js as an interactive background.
+-----------------------------------------------------------------
 
 1) Download the particles.js library from the official website.
 
