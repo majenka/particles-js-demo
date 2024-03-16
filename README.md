@@ -29,35 +29,34 @@ Add JavaScript to load particles.js followed by additional code to pass mouse ev
 
 For example:
 
-(function () {
+	(function () {
+	
+	    // Load particles.js using the configuration file from step 2
+	    particlesJS.load('particles-js', '../particles.json');
+	
+	    // Get a reference to the particles.js canvas.
+	    const canvas = document.querySelector('.particles-js-canvas-el');
 
-    // Load particles.js using the configuration file from step 2
-    particlesJS.load('particles-js', '../particles.json');
-
-
-    // Pass mouse events to particles.js canvas.
-    document.addEventListener('mousemove', function (e) {
-
-        const canvas = document.querySelector('.particles-js-canvas-el');
-
-        const e1 = new MouseEvent("mousemove", {
-            clientX: e.clientX,
-            clientY: e.clientY
-        });
-
-        canvas.dispatchEvent(e1);        
-    });
-
-    document.addEventListener('click', function (e) {
-
-        const canvas = document.querySelector('.particles-js-canvas-el');
-
-        const e1 = new MouseEvent("click", {
-            clientX: e.clientX,
-            clientY: e.clientY
-        });
-
-        canvas.dispatchEvent(e1);
-    });
-
-})();
+	
+	    // Pass mouse events to particles.js canvas.
+	    document.addEventListener('mousemove', function (e) {
+	
+	        const e1 = new MouseEvent("mousemove", {
+	            clientX: e.clientX,
+	            clientY: e.clientY
+	        });
+	
+	        canvas.dispatchEvent(e1);        
+	    });
+	
+	    document.addEventListener('click', function (e) {
+	
+	        const e1 = new MouseEvent("click", {
+	            clientX: e.clientX,
+	            clientY: e.clientY
+	        });
+	
+	        canvas.dispatchEvent(e1);
+	    });
+		
+	})();
