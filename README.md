@@ -34,11 +34,11 @@ For example:
     // Load particles.js using the configuration file from step 2
     particlesJS.load('particles-js', '../particles.json');
 
+    // Get a reference to the particles.js canvas.
+    const canvas = document.querySelector('.particles-js-canvas-el');
 
     // Pass mouse events to particles.js canvas.
     document.addEventListener('mousemove', function (e) {
-
-        const canvas = document.querySelector('.particles-js-canvas-el');
 
         const e1 = new MouseEvent("mousemove", {
             clientX: e.clientX,
@@ -49,8 +49,6 @@ For example:
     });
 
     document.addEventListener('click', function (e) {
-
-        const canvas = document.querySelector('.particles-js-canvas-el');
 
         const e1 = new MouseEvent("click", {
             clientX: e.clientX,

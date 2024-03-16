@@ -117,10 +117,11 @@
         }
     );
 
+    // Get a reference to the particles.js canvas.
+    const canvas = document.querySelector('.particles-js-canvas-el');
+
     // Pass mouse events to particles.js canvas.
     document.addEventListener('mousemove', function (e) {
-
-        const canvas = document.querySelector('.particles-js-canvas-el');
 
         const e1 = new MouseEvent("mousemove", {
             clientX: e.clientX,
@@ -131,8 +132,6 @@
     });
 
     document.addEventListener('click', function (e) {
-
-        const canvas = document.querySelector('.particles-js-canvas-el');
 
         const e1 = new MouseEvent("click", {
             clientX: e.clientX,
