@@ -34,7 +34,7 @@ For example:
 	    // Load particles.js using the configuration file from step 2
 	    particlesJS.load('particles-js', '../particles.json');
 	
-	    // Get a reference to the particles.js canvas.
+	    // Get a reference to the particles-js canvas.
 	    const canvas = document.querySelector('.particles-js-canvas-el');
 	
 	    // Pass mouse events to particles.js canvas.
