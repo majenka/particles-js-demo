@@ -36,7 +36,6 @@ For example:
 	
 	    // Get a reference to the particles.js canvas.
 	    const canvas = document.querySelector('.particles-js-canvas-el');
-
 	
 	    // Pass mouse events to particles.js canvas.
 	    document.addEventListener('mousemove', function (e) {
